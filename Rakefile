@@ -17,10 +17,11 @@ Jeweler::Tasks.new do |gem|
   gem.name = "fb2"
   gem.homepage = "http://github.com/magnolia-fan/fb2"
   gem.license = "MIT"
-  gem.summary = %Q{TODO: one-line summary of your gem}
-  gem.description = %Q{TODO: longer description of your gem}
+  gem.summary = %Q{FB2 util written in ruby}
+  gem.description = %Q{Parses FB2 (FictionBook 2) xml format into nice objects. Uses nokogiri.}
   gem.email = "magnolia_fan@me.com"
-  gem.authors = ["magnolia-fan"]
+  gem.authors = ["Gregory Eremin"]
+  gem.files += Dir['lib/**/*.rb']
   # dependencies defined in Gemfile
 end
 Jeweler::RubygemsDotOrgTasks.new
@@ -42,8 +43,8 @@ end
 
 task :default => :test
 
-require 'rake/rdoctask'
-Rake::RDocTask.new do |rdoc|
+require 'rdoc/task'
+RDoc::Task.new do |rdoc|
   version = File.exist?('VERSION') ? File.read('VERSION') : ""
 
   rdoc.rdoc_dir = 'rdoc'

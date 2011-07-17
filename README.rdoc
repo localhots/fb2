@@ -1,8 +1,9 @@
-= fb2
+== Usage
 
-Description goes here.
+    require 'fb2'
+    @book = Fb2::parse(open('mybook.fb2'))
 
-== Contributing to fb2
+== Contributing
  
 * Check out the latest master to make sure the feature hasn't been implemented or the bug hasn't been fixed yet
 * Check out the issue tracker to make sure someone already hasn't requested it and/or contributed it
@@ -14,6 +15,4 @@ Description goes here.
 
 == Copyright
 
-Copyright (c) 2011 magnolia-fan. See LICENSE.txt for
-further details.
-
+Copyright (c) 2011 Gregory Eremin. See LICENSE.txt for further details.
